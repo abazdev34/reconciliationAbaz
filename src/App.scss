@@ -1,0 +1,107 @@
+
+
+a{
+  text-decoration: none;
+}
+.container {
+	max-width: 600px; // Set a maximum width for the container
+	margin: 20px auto; // Center the container with margin
+	padding: 20px; // Add padding inside the container
+	background-color: #ffffff; // White background for the container
+	border-radius: 8px; // Rounded corners
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+
+	.text {
+		font-size: 1.5rem; // Larger font size for headings
+		margin-bottom: 10px; // Space below headings
+		color: #333; // Darker text color for better readability
+	}
+
+	.space {
+		display: flex; // Flexbox for layout
+		flex-direction: column; // Stack items vertically
+		gap: 15px; // Space between items
+	}
+
+	.tara-input-group {
+		margin: 20px 0;
+		position: relative;
+		display: inline-block;
+	}
+
+	.tara-label {
+		padding: 10px;
+		pointer-events: none;
+		position: absolute;
+		left: 0;
+		top: 0;
+		transition: 0.2s;
+		transition-timing-function: ease;
+		transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+		opacity: 0.5;
+		background: #fff;
+	}
+
+	.tara-input {
+		padding: 10px;
+		width: 100%;
+		max-width: 360px;
+	}
+
+	.tara-input:focus + .tara-label,
+	.tara-input:not(:placeholder-shown) + .tara-label {
+		opacity: 1;
+		transform: scale(0.75) translateY(-70%) translateX(-14px);
+	}
+	.tara-search-list {
+		position: absolute;
+		bottom: -100px;
+		z-index: 10;
+		background-color: green;
+		color: white;
+		font-size: large;
+		width: 100%;
+		max-width: 360px;
+		padding-left: 10px;
+		max-height: 100px;
+
+		overflow: scroll;
+
+		p{
+			cursor: pointer;
+		}
+	}
+}
+
+//Results.tsx
+
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	max-width: 600px;
+}
+
+td,
+th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+	font-weight: 300;
+}
+h1{
+	font-weight: 300;
+	color: green;
+}
+button{
+	padding: 8px;
+	margin-left: 20px;
+	background-color: rgb(21, 255, 0);
+color:#fff;
+	border-radius: 5px ;
+	border: none;
+	margin-bottom: 15px;
+}
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
