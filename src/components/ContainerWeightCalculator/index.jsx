@@ -23,7 +23,8 @@ const ContainerWeightCalculator = () => {
 
 	useEffect(() => {
 		loadSavedData()
-	}, [])
+		setIngredientsLength(ingredients?.length)
+	}, [ingredients])
 
 	useEffect(() => {
 		let timer
@@ -106,7 +107,7 @@ const ContainerWeightCalculator = () => {
 			setError('ID жазылган жок. Сураныч, ID жазыныз.')
 			return false
 		}
-		if (!containers.hasOwnProperty(id)) {
+		if (!Object.prototype.hasOwnProperty.call(containers, id)) {
 			setError('Берилген ID табылган жок. Сураныч, туура ID киргизиңиз.')
 			return false
 		}
