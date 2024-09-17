@@ -277,6 +277,7 @@ const ContainerWeightCalculator = () => {
 		const calculationToEdit = categoryCalculations[currentCategory].find(
 			(calc) => calc.id === idToEdit
 		)
+		
 		if (calculationToEdit) {
 			setId(calculationToEdit.id)
 			setWeight(calculationToEdit.weight.toString())
