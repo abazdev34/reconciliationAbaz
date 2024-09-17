@@ -305,7 +305,7 @@ const ContainerWeightCalculator = () => {
 							handleInputChange()
 						}}
 					/>
-					<label className='tara-label'>Ингредиент,напиример: курица жареная</label>
+					<label className='tara-label'>Ингредиент</label>
 					{search.length > 0 && (
 						<div className='tara-search-list'>
 							{search.map((el, index) => (
