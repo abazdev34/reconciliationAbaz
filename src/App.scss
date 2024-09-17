@@ -89,7 +89,7 @@ a {
   }
 
   .tara-input {
-    max-width: 100%; /* Full width on smaller screens */
+    max-width: 90%; /* Full width on smaller screens */
   }
 
   .tara-search-list {
@@ -128,5 +128,5 @@ button {
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: rgb(151, 229, 235);
 }
