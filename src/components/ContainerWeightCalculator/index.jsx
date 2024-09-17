@@ -20,7 +20,6 @@ const ContainerWeightCalculator = () => {
 	const [ingredientsLength, setIngredientsLength] = useState(
 		ingredients?.length
 	)
-	const [accountedIngredients, setAccountedIngredients] = useState(new Set());
 
 	useEffect(() => {
 		loadSavedData()
@@ -226,7 +225,7 @@ const ContainerWeightCalculator = () => {
 
 			localStorage.setItem('results', JSON.stringify(updatedResults))
 			alert(
-				`Все расчеты завершены и отправлены.\nID: ${resultsLength}\nКод: ${uniqueCode}\nДата: ${currentDate}`
+				`Все расчеты завершены и отправлены.ID: ${resultsLength}\nКод: ${uniqueCode}Дата: ${currentDate}`
 			)
 			setIsTimerRunning(false)
 			setLastId(resultsLength)
