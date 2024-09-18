@@ -341,7 +341,7 @@ const ContainerWeightCalculator = () => {
 						style={{ display: isWeightClicked ? 'block' : 'none' }}
 						required
 						value={id}
-						type='text'
+						type='number'
 						className='tara-input'
 						placeholder=' '
 						onChange={(e) => setId(e.target.value)}
@@ -371,7 +371,7 @@ const ContainerWeightCalculator = () => {
 							handleSave()
 							setShowSaveButton(false)
 						}}
-						className='btn'
+						className='btn1'
 					>
 						Сохранить 
 					</button>
