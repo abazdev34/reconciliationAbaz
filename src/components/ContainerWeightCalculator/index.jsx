@@ -90,6 +90,7 @@ const ContainerWeightCalculator = () => {
 
 		if (existingCalculation) {
 			handleRemoveCalculation(id)
+			alert('этот ID давно пробрался. Попробуйте другой ID.')
 		}
 
 		addCalculation()
@@ -226,7 +227,7 @@ const ContainerWeightCalculator = () => {
 
 			localStorage.setItem('results', JSON.stringify(updatedResults))
 			alert(
-				`Все расчеты завершены и отправлены.ID: ${resultsLength}\nКод: ${uniqueCode}Дата: ${currentDate}`
+				`Все расчеты завершены и отправлены.ID: ${resultsLength}Код: ${uniqueCode}Дата: ${currentDate}`
 			)
 			setIsTimerRunning(false)
 			setLastId(resultsLength)
@@ -276,6 +277,7 @@ const ContainerWeightCalculator = () => {
 	const handleEditCalculation = (idToEdit) => {
 		const calculationToEdit = categoryCalculations[currentCategory].find(
 			(calc) => calc.id === idToEdit
+			
 		)
 		
 		if (calculationToEdit) {
